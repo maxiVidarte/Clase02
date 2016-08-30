@@ -1,4 +1,4 @@
-<?php   require_once 'Aplicacion.php';
+<?php   require_once 'FiguraGeometrica.php';
 
 class Triangulo extends FiguraGeometrica
 {
@@ -23,9 +23,11 @@ class Triangulo extends FiguraGeometrica
 	}
 	function CalcularDatos()
 	{
-		echo "hola estoy en calcular datos<br>";
-		echo "La superficie es: ".$this->_base*$this->_altura/2;
-
+		echo "Calculo de datos del triangulo<br>";
+		echo "La base es: ".$this->_base;
+		echo "<br>La altura es: ".$this->_altura;
+		echo "<br>La superficie es : ".$this->_superficie = $this->_base*$this->_altura/2;
+		echo "<br>El perimetro es: ".$this->_perimetro = $this->_base+2*$this->_altura;
 	}
 
 
