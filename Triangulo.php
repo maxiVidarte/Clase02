@@ -2,10 +2,23 @@
 
 class Triangulo extends FiguraGeometrica
 {
+
 	function __construct()
 	{
 		parent::__construct();
 	}
+
+	function Dibujar()
+	{
+
+
+	}
+	function CalcularDatos()
+	{
+
+
+	}
+
 
 }
 	

@@ -1,6 +1,6 @@
 
 <?php  
-class FiguraGeometrica
+abstract class FiguraGeometrica
 {
 	//atributos 
 	protected $_color;
@@ -16,7 +16,7 @@ class FiguraGeometrica
 	}
 
 	//Metodo getter y setter de color
-	public function getColor() 
+	public function getColor()
 	{
 		return $this->_color;
 	}
@@ -31,8 +31,13 @@ class FiguraGeometrica
 		echo $this->_color."<br>";
 		echo $this->_perimetro."<br>";
 		echo $this->_superficie."<br>";
-
 	}
+
+	//Metodos abstractos
+	public abstract function Dibujar();
+
+	protected abstract function CalcularDatos();
+	
 }
 
 ?>
