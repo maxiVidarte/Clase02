@@ -37,7 +37,7 @@ abstract class FiguraGeometrica
 	public abstract function Dibujar();
 
 	protected abstract function CalcularDatos();
-	
+
 }
 
 ?>
