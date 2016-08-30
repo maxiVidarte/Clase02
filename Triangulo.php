@@ -23,14 +23,15 @@ class Triangulo extends FiguraGeometrica
 	}
 	function CalcularDatos()
 	{
-		echo "hola estoy en calcular datos";
+		echo "hola estoy en calcular datos<br>";
+		echo "La superficie es: ".$this->_base*$this->_altura/2;
 
 	}
 
 
 }
 	
-$prueba = new Triangulo(10.5,20.1);
-echo $prueba->Dibujar();
+$prueba = new Triangulo(5,2);
+//echo $prueba->Dibujar();
 //echo $prueba->toString();
 ?>
